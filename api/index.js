@@ -1,12 +1,12 @@
 import express from 'express';
 import cors from 'cors';
-import authRoutes from './routes/authRoutes.js';
-import workoutRoutes from './routes/workoutRoutes.js';
-import exerciseRoutes from './routes/exerciseRoutes.js';
-import historyRoutes from './routes/historyRoutes.js';
-import uploadRoutes from './routes/uploadRoutes.js';
-import achievementsRoutes from './routes/achievementsRoutes.js';
-import activityRoutes from './routes/activityRoutes.js';
+import authRoutes from './_lib/routes/authRoutes.js';
+import workoutRoutes from './_lib/routes/workoutRoutes.js';
+import exerciseRoutes from './_lib/routes/exerciseRoutes.js';
+import historyRoutes from './_lib/routes/historyRoutes.js';
+import uploadRoutes from './_lib/routes/uploadRoutes.js';
+import achievementsRoutes from './_lib/routes/achievementsRoutes.js';
+import activityRoutes from './_lib/routes/activityRoutes.js';
 
 const app = express();
 
