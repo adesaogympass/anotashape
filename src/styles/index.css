@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-dark-200;
+  }
+
+  body {
+    @apply bg-dark-50 text-dark-800 antialiased;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+  }
+
+  input,
+  textarea,
+  select {
+    @apply bg-dark-100 border border-dark-200 text-dark-800 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all;
+  }
+
+  button {
+    @apply transition-all duration-200 ease-in-out;
+  }
+
+  /* Scrollbar customization */
+  ::-webkit-scrollbar {
+    @apply w-2 h-2;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-dark-100;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-dark-300 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-dark-400;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-lg font-medium transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-dark-50;
+  }
+
+  .btn-primary {
+    @apply btn bg-primary-600 text-white hover:bg-primary-700 focus:ring-primary-500;
+  }
+
+  .btn-secondary {
+    @apply btn bg-dark-200 text-dark-800 hover:bg-dark-300 focus:ring-dark-400;
+  }
+
+  .btn-danger {
+    @apply btn bg-red-600 text-white hover:bg-red-700 focus:ring-red-500;
+  }
+
+  .card {
+    @apply bg-dark-100 rounded-xl p-6 shadow-lg border border-dark-200;
+  }
+
+  .input-group {
+    @apply flex flex-col gap-2;
+  }
+
+  .label {
+    @apply text-sm font-medium text-dark-600;
+  }
+}
+
+@layer utilities {
+  .safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
